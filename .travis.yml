@@ -1,0 +1,18 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - lts/*
+
+cache: true
+
+script: 
+  - yarn build
+
+deploy:
+  provider: pages
+  skip_clearup: true
+  keep_history: true
+  github_token: $GITHUBTOKEN
+  local_dir: public
