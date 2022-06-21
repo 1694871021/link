@@ -7,6 +7,11 @@ node_js:
 
 cache: true
 
+notifications:
+  email: 
+    onsuccess: never
+    onfailure: change
+
 script: 
   - yarn build
 
